@@ -1,0 +1,9 @@
+services:
+  payroll_reminder.commands:
+    class: Drupal\payroll_reminder\Commands\PayrollReminderCommands
+    arguments:
+      - '@payroll_reminder.monthly_pay_date'
+      - '@payroll_reminder.bonus_pay_date'
+      - '@payroll_reminder.csv'
+    tags:
+      - { name: drush.command }

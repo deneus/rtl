@@ -1,0 +1,5 @@
+name: 'Payroll reminder'
+type: module
+description: 'Provides a Drush command to generate a payroll reminder'
+core_version_requirement: ^8 || ^9
+package: 'Custom'

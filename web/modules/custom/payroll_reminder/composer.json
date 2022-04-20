@@ -1,0 +1,11 @@
+{
+    "name": "org/payroll_reminder",
+    "type": "drupal-module",
+    "extra": {
+        "drush": {
+            "services": {
+                "drush.services.yml": "^9 || ^10"
+            }
+        }
+    }
+}

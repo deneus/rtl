@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains payroll_reminder.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function payroll_reminder_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the payroll_reminder module.
+    case 'help.page.payroll_reminder':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides a Drush command to generate a payroll reminder') . '</p>';
+      return $output;
+
+    default:
+  }
+}

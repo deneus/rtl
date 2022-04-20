@@ -1,0 +1,10 @@
+services:
+  payroll_reminder.monthly_pay_date:
+    class: Drupal\payroll_reminder\Service\MonthlyPayDateService
+    arguments: ['@logger.factory', '@date.formatter' ]
+  payroll_reminder.bonus_pay_date:
+    class: Drupal\payroll_reminder\Service\BonusPayDateService
+    arguments: ['@logger.factory', '@date.formatter' ]
+  payroll_reminder.csv:
+    class: Drupal\payroll_reminder\Service\CsvService
+    arguments: ['@logger.factory', '@date.formatter' ]
