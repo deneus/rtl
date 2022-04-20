@@ -22,9 +22,7 @@
         "drupal/console": "^1.9",
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-recommended": "^9.3",
-        "drupal/devel": "^4.1",
         "drush/drush": "^10.6",
-        "league/csv": "9.0",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2"
     },
